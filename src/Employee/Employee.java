@@ -1,8 +1,8 @@
 package Employee;
 
-public abstract class Employee {
-    static String name;
-    static int salary;
+public class Employee {
+    protected String name;
+    protected int salary;
 
     public Employee(String name, int salary) {
         this.name = name;
@@ -18,7 +18,8 @@ public abstract class Employee {
         this.salary = salary;
     }
 
-    protected static String calculateHourSalary(int hours) {
-        return name + " gets " + (hours * salary) + " per" + hours + " hours";
+    protected int getSalary(int hours) {
+        return (hours * salary);
     }
+
 }

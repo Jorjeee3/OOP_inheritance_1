@@ -1,11 +1,14 @@
 package Employee;
 
 public class Manager extends Employee {
+
+    private int bonus = 22;
     public Manager(String name, int salary) {
         super(name, salary);
     }
 
-    public static String calculateMixedSalary(int hours, double procent) {
-        return name + " gets " + (hours * salary) + " + " + procent + "%, per " + hours + " hours";
+    @Override
+    protected int getSalary(int hours) {
+        return super.getSalary(20) + (super.getSalary(20) * bonus / 50);
     }
 }
