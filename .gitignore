@@ -1,7 +1,3 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-
 *.class
 *.jar
 
@@ -33,7 +29,6 @@ Thumbs.db
 
 /config.properties
 /application.properties
-
 
 
 
